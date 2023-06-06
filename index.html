@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width", "initial-scale=1.0" > 
+    <title>Encuesta</title>
+  </head>
+  <body>
+    
+    <header>
+      <h1 id="title">Formulario de Encuesta</h1>
+      <p id="description">Gracias por tomarte el tiempo para ayudarnos a mejorar nuestra plataforma.</p>
+    </header>
+
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Nombre <input id="name" type="text" required placeholder="Escribe tu nombre y apellido"/></label>
+        <label id="email-label" for="email">Email <input id="email" type="email" required placeholder="ejemplo@gmail.com"/></label>
+        <label id="number-label" for="number">Años <input id="number" type="number" min="13" max="120" placeholder="Escribe tu edad"/></label>
+      </fieldset>
+      <fieldset>
+        <legend>¿Que opción describe tu situación actual?</legend>
+        <select id="dropdown" name="role" class="role">
+          <option value="">seleccione su rol actual</option>
+          <option value="estudiante">Estudiante</option>
+          <option value="profesor" >Profesor</option>
+          <option value="desempleado">Desempleado</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>¿Nos recomendarías a un amigo?</legend>
+        <label><input type="radio" name="recommend-type" class="input-radio" value="definitely"/> Definitivamente</label>
+        <label><input type="radio" class="input-radio" name="recommend-type" value="maybe"/> Tal vez</label>
+        <label><input type="radio" class="input-radio" name="recommend-type" value="not-sure"/> No estoy seguro</label>
+      </fieldset>
+      <fieldset>
+        <legend>¿Qué te gustaría que mejoremos?</legend> 
+        <label><input type="checkbox" class="input-checkbox"value="1" /> Video</label>
+        <label><input type="checkbox" class="input-checkbox" value="2" /> Mejorar Accesibilidad</label>
+        <label><input type="checkbox" class="input-checkbox" value="3"/> Comunidad</label>
+        <label><input type="checkbox" class="input-checkbox" value="4"/> wiki</label>
+      </fieldset>
+      <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Escribe algún comentario..."></textarea>
+      <input type="submit" id="submit"/> 
+    
+    </form>
+    
+  </body>
+</html>
